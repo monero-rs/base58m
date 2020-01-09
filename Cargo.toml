@@ -7,8 +7,9 @@ authors = ["h4sh3d <h4sh3d@protonmail.com>"]
 license = "MIT"
 homepage = "https://github.com/monero-rs/base58m-rs"
 repository = "https://github.com/monero-rs/base58m-rs"
+readme = "README.md"
 
-include = ["src/**/*", "Cargo.toml"]
+include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
 
 edition = "2018"
 
