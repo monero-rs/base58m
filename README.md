@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/monero-rs/base58m-rs.svg?branch=master)](https://travis-ci.com/monero-rs/base58m-rs) [![Crates.io](https://img.shields.io/crates/v/base58m.svg)](https://crates.io/crates/base58m) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Rust Monero Base58 `base64-like` Binary
+`base58m` Rust Monero Base58 `base64`-like Binary
 ===
 
 This binary crate is a simple implementation of a base64-like binary for Monero base58 encoding.

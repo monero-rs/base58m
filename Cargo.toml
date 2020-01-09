@@ -1,7 +1,7 @@
 [package]
 name = "base58m"
 description = "base64-like binary with support for encoding/decoding Monero base58 strings."
-keywords = ["monero", "base58", "base58-check"]
+keywords = ["binary", "monero", "base58", "base58-check"]
 version = "0.1.0"
 authors = ["h4sh3d <h4sh3d@protonmail.com>"]
 license = "MIT"
