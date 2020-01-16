@@ -6,7 +6,7 @@
 This binary crate is a simple implementation of a base64-like binary for Monero base58 encoding.
 
 ```
-base58m 0.1.0
+base58m 0.1.1
 h4sh3d <h4sh3d@protonmail.com>
 Base58 (Monero format) encode or decode FILE, or standard input, to standard output.
 
