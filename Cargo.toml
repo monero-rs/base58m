@@ -8,8 +8,11 @@ license = "MIT"
 homepage = "https://github.com/monero-rs/base58m-rs"
 repository = "https://github.com/monero-rs/base58m-rs"
 readme = "README.md"
-
-include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
+include = [
+    "src/*",
+    "README.md",
+    "LICENSE",
+]
 
 edition = "2018"
 
