@@ -13,6 +13,9 @@
 // copies or substantial portions of the Software.
 //
 
+// Coding conventions
+#![forbid(unsafe_code)]
+
 use tokio::fs::File;
 use tokio::io;
 use tokio::io::AsyncRead;

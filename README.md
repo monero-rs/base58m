@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/monero-rs/base58m-rs.svg?branch=master)](https://travis-ci.com/monero-rs/base58m-rs) [![Crates.io](https://img.shields.io/crates/v/base58m.svg)](https://crates.io/crates/base58m) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.com/monero-rs/base58m-rs.svg?branch=master)](https://travis-ci.com/monero-rs/base58m-rs) [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/) [![Crates.io](https://img.shields.io/crates/v/base58m.svg)](https://crates.io/crates/base58m) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 `base58m`, a Rust Monero Base58 `base64`-like Binary
 ===
