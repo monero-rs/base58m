@@ -3,7 +3,6 @@
 [![Crates.io](https://img.shields.io/crates/v/base58m.svg)](https://crates.io/crates/base58m)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<!-- omit in TOC -->
 `base58m`, a Rust Monero Base58 `base64`-like Binary
 ===
 
