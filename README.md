@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/monero-rs/base58m-rs.svg?branch=master)](https://travis-ci.com/monero-rs/base58m-rs)
+[![Build Status](https://img.shields.io/github/workflow/status/monero-rs/base58m-rs/CI/main)](https://github.com/monero-rs/base58m-rs/actions/workflows/ci.yml)
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
 [![Crates.io](https://img.shields.io/crates/v/base58m.svg)](https://crates.io/crates/base58m)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
