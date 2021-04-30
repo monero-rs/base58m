@@ -57,6 +57,14 @@ enum Mode {
     CheckDecode,
 }
 
+/// Base58 encode or decode the `FILE` passed in parameter, or if no `FILE` or if `= '-'` the
+/// standard input is used.
+///
+/// Two flags are defined:
+///
+///  * `-c` or `--check` for using the checksum mode in base58
+///  * `-d` or `--decode` for decoding a streaming, default is encoding without checksum
+///
 #[tokio::main]
 async fn main() -> Result<()> {
     let mut out = io::stdout();
