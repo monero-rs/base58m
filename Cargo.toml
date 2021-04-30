@@ -23,6 +23,3 @@ tokio = { version = "1", features = ["fs", "rt", "rt-multi-thread", "macros", "i
 futures-util = "0.3.1"
 async-stream = { version = "0.2.0" }
 thiserror = "1"
-
-[badges]
-travis-ci = { repository = "monero-rs/base58m-rs", branch = "master" }
