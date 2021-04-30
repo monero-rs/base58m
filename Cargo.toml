@@ -5,8 +5,8 @@ keywords = ["binary", "monero", "base58", "base58-check"]
 version = "0.2.0"
 authors = ["h4sh3d <h4sh3d@protonmail.com>"]
 license = "MIT"
-homepage = "https://github.com/monero-rs/base58m-rs"
-repository = "https://github.com/monero-rs/base58m-rs"
+homepage = "https://github.com/monero-rs/base58m"
+repository = "https://github.com/monero-rs/base58m"
 readme = "README.md"
 include = [
     "src/*",
