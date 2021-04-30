@@ -24,69 +24,36 @@ use tokio::io::AsyncWriteExt;
 use futures_util::pin_mut;
 use futures_util::stream::StreamExt;
 
-use std::{error, fmt};
-
 use base58_monero::{
     base58, decode_stream, decode_stream_check, encode_stream, encode_stream_check,
 };
-use clap::clap_app;
+use clap::{clap_app, crate_version};
+use thiserror::Error;
 
 /// Possible errors when reading inputs and encoding/decoding base58 and base58-check strings.
+#[derive(Error, Debug)]
 pub enum Error {
-    /// Invalid base58 encoding/decoding
-    InvalidEncode(base58::Error),
-    /// Invalid IO operation
-    InvalidIo(io::Error),
+    /// Invalid base58 encoding/decoding.
+    #[error("Invalid base58 encoding/decoding: {0}")]
+    InvalidEncode(#[from] base58::Error),
+    /// Invalid IO operation.
+    #[error("Invalid IO operation: {0}")]
+    InvalidIo(#[from] io::Error),
 }
 
-impl From<base58::Error> for Error {
-    fn from(e: base58::Error) -> Error {
-        Error::InvalidEncode(e)
-    }
-}
-
-impl From<io::Error> for Error {
-    fn from(e: io::Error) -> Error {
-        Error::InvalidIo(e)
-    }
-}
-
-impl fmt::Display for Error {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        match self {
-            Error::InvalidEncode(e) => write!(f, "invalid encoding/decoding operation, {}", e),
-            Error::InvalidIo(e) => write!(f, "invalid IO operation, {}", e),
-        }
-    }
-}
-
-impl fmt::Debug for Error {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{}", self)
-    }
-}
-
-impl error::Error for Error {
-    fn source(&self) -> Option<&(dyn error::Error + 'static)> {
-        match self {
-            Error::InvalidEncode(e) => Some(e),
-            Error::InvalidIo(e) => Some(e),
-        }
-    }
-}
-
+/// Helper result type used for all operations.
 type Result<T> = std::result::Result<T, Error>;
 
-/// Defines the mode of operation.
-#[derive(Debug)]
+/// Defines the mode of operation to apply on the data stream.
+#[derive(Debug, Clone, Copy)]
 enum Mode {
-    /// Encode the stream
+    /// Encode the stream in base58 Monero format.
     Encode,
-    /// Decode the stream
+    /// Decode the stream from a base58 Monero format.
     Decode,
-    /// Encode the stream with checksum
+    /// Encode the stream in base58 Monero format with an appended checksum.
     CheckEncode,
-    /// Decode the stream with checksum
+    /// Decode the stream from a base58 Monero format with an appended checksum.
     CheckDecode,
 }
 
@@ -95,7 +62,7 @@ async fn main() -> Result<()> {
     let mut out = io::stdout();
 
     let matches = clap_app!(base58m =>
-        (version: "0.1.0")
+        (version: crate_version!())
         (author: "h4sh3d <h4sh3d@protonmail.com>")
         (about: "Base58 (Monero format) encode or decode FILE, or standard input, to standard output.\n\nWith no FILE, or when FILE is -, read standard input.")
         (@arg FILE: "Sets the input file to use")

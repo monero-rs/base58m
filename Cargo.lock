@@ -89,6 +89,7 @@ dependencies = [
  "base58-monero",
  "clap",
  "futures-util",
+ "thiserror",
  "tokio",
 ]
 
