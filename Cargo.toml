@@ -20,6 +20,6 @@ edition = "2018"
 clap = "2.33.0"
 base58-monero = "0.3.0"
 tokio = { version = "1", features = ["fs", "rt", "rt-multi-thread", "macros", "io-std", "io-util"] }
-futures-util = "0.3.1"
+futures-util = "0.3.15"
 async-stream = { version = "0.3.1" }
 thiserror = "1"
