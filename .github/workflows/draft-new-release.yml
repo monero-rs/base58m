@@ -1,0 +1,19 @@
+name: "Draft new release"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The new version in X.Y.Z format.'
+        required: true
+
+jobs:
+  draft-new-release:
+    name: "Draft a new release"
+    uses: monero-rs/workflows/.github/workflows/draft-new-release.yml@44d2ea10b8ede7ab876ff21b72388b47db553724
+    with:
+      version: ${{ github.event.inputs.version }}
+      name: h4sh3d
+      email: h4sh3d@protonmail.com
+    secrets:
+      token: ${{ secrets.H4SH3D_PERSONAL_ACCESS_TOKEN }}
