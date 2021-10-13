@@ -19,3 +19,42 @@ jobs:
     - name: Build
       run: cargo build --verbose
 
+  test:
+    name: Test encode/decode
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2.3.4
+    - name: Install base58m
+      run: cargo install --force --path .
+
+    - name: Serialize hello world
+      run: |
+        res=$(echo -n "hello world" | base58m -)
+        if [ $res != "JTmsyNwG6XQ1fS9Z" ]; then; exit -1; fi;
+
+    - name: Deserialize hello world
+      run: |
+        res=$(echo -n "JTmsyNwG6XQ1fS9Z" | base58m -d -)
+        if [ $res != "hello world" ]; then; exit -1; fi;
+
+  test_check:
+    name: Test encode/decode with check mode enable
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2.3.4
+    - name: Install base58m
+      run: cargo install --force --path .
+
+    - name: Serialize hello world
+      run: |
+        res=$(echo -n "hello world" | base58m -c -)
+        if [ $res != "JTmsyNwG6XQ5LVkpe6Whi" ]; then; exit -1; fi;
+
+    - name: Deserialize hello world
+      run: |
+        res=$(echo -n "JTmsyNwG6XQ5LVkpe6Whi" | base58m -cd -)
+        if [ $res != "hello world" ]; then; exit -1; fi;
