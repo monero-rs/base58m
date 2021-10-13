@@ -1,26 +1,25 @@
 [package]
 name = "base58m"
-description = "base64-like binary with support for encoding/decoding Monero base58 strings."
-keywords = ["binary", "monero", "base58", "base58-check"]
-version = "0.2.0"
-authors = ["h4sh3d <h4sh3d@protonmail.com>"]
-license = "MIT"
+version = "0.2.1"
+authors = [ "h4sh3d <h4sh3d@protonmail.com>" ]
+edition = "2018"
 homepage = "https://github.com/monero-rs/base58m"
-repository = "https://github.com/monero-rs/base58m"
-readme = "README.md"
 include = [
     "src/*",
     "README.md",
     "CHANGELOG.md",
     "LICENSE",
 ]
-
-edition = "2018"
+keywords = [ "binary", "monero", "base58", "base58-check" ]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/monero-rs/base58m"
+description = "base64-like binary with support for encoding/decoding Monero base58 strings."
 
 [dependencies]
-clap = "2.33.0"
-base58-monero = "0.3.1"
-tokio = { version = "1", features = ["fs", "rt", "rt-multi-thread", "macros", "io-std", "io-util"] }
-futures-util = "0.3.17"
 async-stream = "0.3.2"
+base58-monero = "0.3.1"
+clap = "2.33.0"
+futures-util = "0.3.17"
 thiserror = "1"
+tokio = { version = "1", features = [ "fs", "rt", "rt-multi-thread", "macros", "io-std", "io-util" ] }
