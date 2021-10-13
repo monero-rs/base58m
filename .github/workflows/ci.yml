@@ -32,12 +32,18 @@ jobs:
     - name: Serialize hello world
       run: |
         res=$(echo -n "hello world" | base58m -)
-        if [ $res != "JTmsyNwG6XQ1fS9Z" ]; then; exit -1; fi;
+        if [ $res != "JTmsyNwG6XQ1fS9Z" ]
+        then
+        exit -1
+        fi
 
     - name: Deserialize hello world
       run: |
         res=$(echo -n "JTmsyNwG6XQ1fS9Z" | base58m -d -)
-        if [ $res != "hello world" ]; then; exit -1; fi;
+        if [ $res != "hello world" ]
+        then
+        exit -1
+        fi
 
   test_check:
     name: Test encode/decode with check mode enable
@@ -49,12 +55,18 @@ jobs:
     - name: Install base58m
       run: cargo install --force --path .
 
-    - name: Serialize hello world
+    - name: Serialize hello world with check mode enable
       run: |
         res=$(echo -n "hello world" | base58m -c -)
-        if [ $res != "JTmsyNwG6XQ5LVkpe6Whi" ]; then; exit -1; fi;
+        if [ $res != "JTmsyNwG6XQ5LVkpe6Whi" ]
+        then
+        exit -1
+        fi
 
-    - name: Deserialize hello world
+    - name: Deserialize hello world with check mode enable
       run: |
         res=$(echo -n "JTmsyNwG6XQ5LVkpe6Whi" | base58m -cd -)
-        if [ $res != "hello world" ]; then; exit -1; fi;
+        if [ $res != "hello world" ]
+        then
+        exit -1
+        fi
