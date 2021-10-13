@@ -10,10 +10,11 @@ on:
 jobs:
   draft-new-release:
     name: "Draft a new release"
-    uses: monero-rs/workflows/.github/workflows/draft-new-release.yml@0ed0d39dddf858a1c4396611f1d3e45111b7d320
+    uses: monero-rs/workflows/.github/workflows/draft-new-release.yml@4ff536e696414ef431af7dd6f78139bdb9b8bc6b
     with:
       version: ${{ github.event.inputs.version }}
       name: h4sh3d
       email: h4sh3d@protonmail.com
+      with_lock: true
     secrets:
       token: ${{ secrets.H4SH3D_PERSONAL_ACCESS_TOKEN }}
