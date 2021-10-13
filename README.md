@@ -9,7 +9,7 @@
 This binary crate is a simple implementation of a base64-like binary for Monero base58 encoding.
 
 ```
-base58m 0.2.0
+base58m
 h4sh3d <h4sh3d@protonmail.com>
 Base58 (Monero format) encode or decode FILE, or standard input, to standard output.
 
@@ -28,7 +28,17 @@ ARGS:
     <FILE>    Sets the input file to use
 ```
 
-About
-===
+## Install
+
+If you have the rust toolchain setup on your machine simply run (use `--force` to update the binary)
+```
+cargo install --force base58m
+```
+
+## Releases and Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) and [RELEASING.md](RELEASING.md).
+
+## About
 
 This project is maintained by community members. All contributions are welcome!

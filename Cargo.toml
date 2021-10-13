@@ -11,6 +11,7 @@ readme = "README.md"
 include = [
     "src/*",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE",
 ]
 
@@ -21,5 +22,5 @@ clap = "2.33.0"
 base58-monero = "0.3.1"
 tokio = { version = "1", features = ["fs", "rt", "rt-multi-thread", "macros", "io-std", "io-util"] }
 futures-util = "0.3.17"
-async-stream = { version = "0.3.2" }
+async-stream = "0.3.2"
 thiserror = "1"
