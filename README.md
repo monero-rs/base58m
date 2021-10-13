@@ -28,7 +28,13 @@ ARGS:
     <FILE>    Sets the input file to use
 ```
 
-About
-===
+## Install
+
+If you have the rust toolchain setup on your machine simply run (use `--force` to update the binary)
+```
+cargo install --force base58m
+```
+
+## About
 
 This project is maintained by community members. All contributions are welcome!
