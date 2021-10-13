@@ -10,7 +10,7 @@ on:
 jobs:
   draft-new-release:
     name: "Draft a new release"
-    uses: monero-rs/workflows/.github/workflows/draft-new-release.yml@4ff536e696414ef431af7dd6f78139bdb9b8bc6b
+    uses: monero-rs/workflows/.github/workflows/draft-new-release.yml@v1
     with:
       version: ${{ github.event.inputs.version }}
       name: h4sh3d

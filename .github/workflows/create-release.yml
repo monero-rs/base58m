@@ -9,6 +9,6 @@ jobs:
   create_release:
     name: Create from merged release branch
     if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/')
-    uses: monero-rs/workflows/.github/workflows/create-release.yml@4ff536e696414ef431af7dd6f78139bdb9b8bc6b
+    uses: monero-rs/workflows/.github/workflows/create-release.yml@v1
     secrets:
       token: ${{ secrets.H4SH3D_PERSONAL_ACCESS_TOKEN }}
