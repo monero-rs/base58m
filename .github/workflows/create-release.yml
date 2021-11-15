@@ -40,7 +40,7 @@ jobs:
     with:
       artifact_name: release-folder
       files: |
-         target/release/base58m
+         base58m/target/release/base58m
 
   release_to_crates:
     name: Publish the new release to crates.io
