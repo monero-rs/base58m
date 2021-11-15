@@ -51,9 +51,9 @@ checksum = "cdb031dd78e28731d87d56cc8ffef4a8f36ca26c38fe2de700543e627f8a464a"
 
 [[package]]
 name = "base58-monero"
-version = "0.3.1"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1df741a56140a4d26932fde3bd69ce8abec7f50d238f8c16351caa789a6d8fe9"
+checksum = "935c90240f9b7749c80746bf88ad9cb346f34b01ee30ad4d566dfdecd6e3cc6a"
 dependencies = [
  "async-stream",
  "futures-util",
