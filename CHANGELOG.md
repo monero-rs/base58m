@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Bump tokio from `1.12.0` to `1.13.0` ([#30](https://github.com/monero-rs/base58m/pull/30))
+
 ## [0.2.1] - 2021-10-13
 
 ### Added
