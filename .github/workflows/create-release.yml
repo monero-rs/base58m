@@ -11,6 +11,7 @@ env:
 jobs:
   produce_binaries:
     name: Compile released binaries
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -34,7 +35,6 @@ jobs:
 
   create_release:
     name: Create from merged release branch
-    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'release/')
     uses: monero-rs/workflows/.github/workflows/create-release.yml@v1.1.0
     needs: produce_binaries
     with:
