@@ -1,4 +1,4 @@
-name: "Draft new release"
+name: Draft new release
 
 on:
   workflow_dispatch:
@@ -9,12 +9,7 @@ on:
 
 jobs:
   draft-new-release:
-    name: "Draft a new release"
-    uses: monero-rs/workflows/.github/workflows/draft-new-release.yml@v1
+    name: Draft a new release
+    uses: monero-rs/workflows/.github/workflows/draft-new-release.yml@v1.1.0
     with:
       version: ${{ github.event.inputs.version }}
-      name: h4sh3d
-      email: h4sh3d@protonmail.com
-      with_lock: true
-    secrets:
-      token: ${{ secrets.H4SH3D_PERSONAL_ACCESS_TOKEN }}
