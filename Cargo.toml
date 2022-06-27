@@ -20,7 +20,7 @@ metadata = { msrv = "1.49.0" }
 [dependencies]
 async-stream = "0.3.3"
 base58-monero = { version = "1", features = [ "stream" ] }
-clap = "2.33.0"
+clap = "3.2.6"
 futures-util = "0.3.21"
 thiserror = "1"
 tokio = { version = "1", features = [ "fs", "rt", "rt-multi-thread", "macros", "io-std", "io-util" ] }
