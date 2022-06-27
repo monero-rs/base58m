@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Bump shared workflows to v2
 - Bump thiserror from 1.0.30 to 1.0.31
 - Bump async-stream from 0.3.2 to 0.3.3
 - Bump futures-util from 0.3.17 to 0.3.21
