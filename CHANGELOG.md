@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Bump MSRV from 1.45.2 to 1.49.0
 - Bump tokio from 1.13.0 to 1.19.2
 - Bump shared workflows to v2
 - Bump thiserror from 1.0.30 to 1.0.31
