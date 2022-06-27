@@ -4,8 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MSRV](https://img.shields.io/badge/MSRV-1.56.1-blue)](https://blog.rust-lang.org/2021/11/01/Rust-1.56.1.html)
 
-`base58m`, a Rust Monero Base58 `base64`-like Binary
-===
+# `base58m`, a Rust Monero Base58 `base64`-like Binary
 
 This binary crate is a simple implementation of a base64-like binary for Monero base58 encoding.
 
@@ -32,6 +31,7 @@ OPTIONS:
 ## Install
 
 If you have the rust toolchain setup on your machine simply run (use `--force` to update the binary)
+
 ```
 cargo install --force base58m
 ```

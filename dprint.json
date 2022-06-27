@@ -6,9 +6,7 @@
   },
   "markdown": {
   },
-  "rustfmt": {
-  },
-  "includes": ["**/*.{json,md,rs,toml}"],
+  "includes": ["**/*.{json,md,toml}"],
   "excludes": [
     "**/*-lock.json",
     "**/target"
