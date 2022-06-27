@@ -71,7 +71,7 @@ async fn main() -> Result<()> {
 
     let matches = clap_app!(base58m =>
         (version: crate_version!())
-        (author: "h4sh3d <h4sh3d@protonmail.com>")
+        (author: "Monero Rust Contributors")
         (about: "Base58 (Monero format) encode or decode FILE, or standard input, to standard output.\n\nWith no FILE, or when FILE is -, read standard input.")
         (@arg FILE: "Sets the input file to use")
         (@arg decode: -d --decode "Decode data")

@@ -11,7 +11,7 @@ This binary crate is a simple implementation of a base64-like binary for Monero 
 
 ```
 base58m
-h4sh3d <h4sh3d@protonmail.com>
+Monero Rust Contributors
 Base58 (Monero format) encode or decode FILE, or standard input, to standard output.
 
 With no FILE, or when FILE is -, read standard input.
