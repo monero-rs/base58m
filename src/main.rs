@@ -1,6 +1,6 @@
 // Rust Monero Base58 binary encoder/decoder
-// Written in 2020 by
-//   h4sh3d <h4sh3d@protonmail.com>
+// Written in 2020-2022 by
+//   Monero Rust Contributors
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
