@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Bump futures-util from 0.3.17 to 0.3.21
+
 ## [0.2.2] - 2021-11-15
 
 ### Changed
