@@ -2,7 +2,7 @@
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
 [![Crates.io](https://img.shields.io/crates/v/base58m.svg)](https://crates.io/crates/base58m)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![MSRV](https://img.shields.io/badge/MSRV-1.49.0-blue)](https://blog.rust-lang.org/2020/12/31/Rust-1.49.0.html)
+[![MSRV](https://img.shields.io/badge/MSRV-1.56.1-blue)](https://blog.rust-lang.org/2021/11/01/Rust-1.56.1.html)
 
 `base58m`, a Rust Monero Base58 `base64`-like Binary
 ===

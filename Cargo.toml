@@ -15,12 +15,12 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/monero-rs/base58m"
 description = "base64-like binary with support for encoding/decoding Monero base58 strings."
-metadata = { msrv = "1.49.0" }
+rust-version = "1.56.1"
 
 [dependencies]
 async-stream = "0.3.3"
 base58-monero = { version = "1", features = [ "stream" ] }
-clap = "2.33.0"
+clap = { version = "3.2.6", features = [ "cargo" ] }
 futures-util = "0.3.21"
 thiserror = "1"
 tokio = { version = "1", features = [ "fs", "rt", "rt-multi-thread", "macros", "io-std", "io-util" ] }
