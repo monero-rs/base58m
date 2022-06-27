@@ -17,16 +17,16 @@ Base58 (Monero format) encode or decode FILE, or standard input, to standard out
 With no FILE, or when FILE is -, read standard input.
 
 USAGE:
-    base58m [FLAGS] [FILE]
-
-FLAGS:
-    -c, --check      Use base58 check mode
-    -d, --decode     Decode data
-    -h, --help       Prints help information
-    -V, --version    Prints version information
+    base58m [OPTIONS] [FILE]
 
 ARGS:
     <FILE>    Sets the input file to use
+
+OPTIONS:
+    -c, --check      Use base58 check mode
+    -d, --decode     Decode data
+    -h, --help       Print help information
+    -V, --version    Print version information
 ```
 
 ## Install
