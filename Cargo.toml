@@ -15,6 +15,7 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/monero-rs/base58m"
 description = "base64-like binary with support for encoding/decoding Monero base58 strings."
+metadata = { msrv = "1.45.2" }
 
 [dependencies]
 async-stream = "0.3.2"
