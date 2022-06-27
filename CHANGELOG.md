@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Bump async-stream from 0.3.2 to 0.3.3
 - Bump futures-util from 0.3.17 to 0.3.21
 
 ## [0.2.2] - 2021-11-15
