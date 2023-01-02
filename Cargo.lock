@@ -55,7 +55,7 @@ dependencies = [
 
 [[package]]
 name = "base58m"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "async-stream",
  "base58-monero",
