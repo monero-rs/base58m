@@ -14,7 +14,7 @@ keywords = ["binary", "monero", "base58", "base58-check"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/monero-rs/base58m"
-rust-version = "1.56.1"
+rust-version = "1.63.0"
 description = "base64-like binary with support for encoding/decoding Monero base58 strings."
 
 [dependencies]
