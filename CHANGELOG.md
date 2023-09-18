@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Migrate to Rust edition 2021
 - Bump monero base58 to version 2
 - Bump MSRV to Rust `1.63.0`
 
