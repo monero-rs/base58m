@@ -2,7 +2,7 @@
 name = "base58m"
 version = "1.0.1"
 authors = ["Monero Rust Contributors", "h4sh3d <h4sh3d@protonmail.com>"]
-edition = "2018"
+edition = "2021"
 homepage = "https://github.com/monero-rs/base58m"
 include = [
   "src/*",
@@ -14,12 +14,12 @@ keywords = ["binary", "monero", "base58", "base58-check"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/monero-rs/base58m"
-rust-version = "1.56.1"
+rust-version = "1.63.0"
 description = "base64-like binary with support for encoding/decoding Monero base58 strings."
 
 [dependencies]
 async-stream = "0.3.5"
-base58-monero = { version = "1", features = ["stream"] }
+base58-monero = { version = "2", features = ["check", "stream"] }
 clap = { version = "3.2.6", features = ["cargo"] }
 futures-util = "0.3.27"
 thiserror = "1"

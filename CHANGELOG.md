@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Cache for build jobs in CI
 
+### Changed
+
+- Migrate to Rust edition 2021
+- Bump monero base58 to version 2
+- Bump MSRV to Rust `1.63.0`
+
 ## [1.0.1] - 2023-01-02
 
 ### Changed
