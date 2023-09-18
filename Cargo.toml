@@ -19,7 +19,7 @@ description = "base64-like binary with support for encoding/decoding Monero base
 
 [dependencies]
 async-stream = "0.3.5"
-base58-monero = { version = "1", features = ["stream"] }
+base58-monero = { version = "2", features = ["check", "stream"] }
 clap = { version = "3.2.6", features = ["cargo"] }
 futures-util = "0.3.27"
 thiserror = "1"
