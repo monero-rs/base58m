@@ -27,7 +27,7 @@ jobs:
           args: --release --all-features
 
       - name: Archive release folder
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: release-folder
           path: target/release
